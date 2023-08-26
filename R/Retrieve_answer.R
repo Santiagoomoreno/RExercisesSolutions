@@ -59,7 +59,7 @@ Item 5: In this code:\n
 We take the flights dataset and pass it through the %>% operator.\n
 
 We use the arrange() function to sort the rows in ascending order based on the distance column. This means that flights with the shortest distances will appear first.\n"
-  cat(mensaje2)
+  cat(mensaje1,mensaje2)
 
 return(list(
       sorted_flights_missing_first = sorted_flights_missing_first,
