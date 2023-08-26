@@ -2,14 +2,14 @@
 #'
 #In this workshop, we performed an analysis of flight data using the nycflights13 package and the tidyverse collection of packages in the R programming language.
 #'
-#' @param exercise_num El número del ejercicio (entre 1 y 6).
-#' @return La solución para el ejercicio especificado.
+#' @param exercise_num The number of the exercise (between 1 and 6).
+#' @return The solution for the specified exercise.
 #' @export
 #'
 #' @examples
 #' retrieve_answer(2)
 #' retrieve_answer(5)
-# Función para seleccionar preguntas y respuestas según el número de ejercicio
+# Function to select questions and answers according to exercise number
 
 retrieve_answer <- function(exercise_num) {
   # Ejercicio 5.2.4: Items 1 y 2
