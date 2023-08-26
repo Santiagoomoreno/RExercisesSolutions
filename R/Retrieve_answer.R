@@ -12,7 +12,7 @@
 # Function to select questions and answers according to exercise number
 
 retrieve_answer <- function(exercise_num) {
-  # Ejercicio 5.2.4: Items 1 y 2
+  # Exercise 5.2.4: Items 1 y 2
   if (exercise_num == "1") {
     f_d <- nycflights13::flights
     myDf1 <- filter(f_d, arr_delay >= 2)
@@ -21,7 +21,7 @@ retrieve_answer <- function(exercise_num) {
     return(list(myDf1 = myDf1, myDf2 = myDf2))
   }
 
-  # Ejercicio 5.3.1: Todos los items
+  # Exercise 5.3.1: All items
   if (exercise_num == "2") {
     sorted_flights_missing_first <- flights %>% arrange(desc(is.na(dep_time)))
     most_delayed_flights <- flights %>% arrange(desc(arr_delay))
@@ -96,7 +96,7 @@ This code selects columns whose names contain the string TIME, such as dep_time 
 
     cat(mensaje3)
   }
-  # Ejercicio 5.5.2: Items 1 y 2
+  # Exercises 5.5.2: Items 1 y 2
   if (exercise_num == "4") {
     flights_modified <- flights %>%
       mutate(
@@ -153,7 +153,7 @@ Both aspects are important, but the significance may vary depending on passenger
     cat(mensaje5)
   }
 
-  # Ejercicio 5.7.1: Item 2
+  # Exercise 5.7.1: Item 2
   if (exercise_num == "6") {
     worst_punctuality <- flights %>%
       group_by(tailnum) %>%
@@ -188,7 +188,7 @@ Finally, we display the worst_punctuality dataset to see the tail numbers of air
    cat(mensaje6)
      return(worst_punctuality)
   }
-  # Si no se encontró el ejercicio
+  # If don´t found the exercise
   return("Ejercicio no encontrado.")
 }
 
