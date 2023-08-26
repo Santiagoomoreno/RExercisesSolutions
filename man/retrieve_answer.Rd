@@ -7,10 +7,10 @@
 retrieve_answer(exercise_num)
 }
 \arguments{
-\item{exercise_num}{El número del ejercicio (entre 1 y 6).}
+\item{exercise_num}{The number of the exercise (between 1 and 6).}
 }
 \value{
-La solución para el ejercicio especificado.
+The solution for the specified exercise.
 }
 \description{
 R DATA ANALYSIS
